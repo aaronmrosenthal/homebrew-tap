@@ -4,23 +4,23 @@
 class Toolkode < Formula
   desc "The AI engineering terminal. Free."
   homepage "https://toolkode.com"
-  version "1.3.7"
   license :cannot_represent
+  version "1.4.1"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.3.7/toolkode-darwin-x64.zip"
-      sha256 "605699e586ac16d0e2bf7e010bad287de71536dc88d82a7b701b831f419c2572"
+      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.4.1/toolkode-darwin-x64.zip"
+      sha256 "1af1c7f2cfc5ffe4d1b280f4afbfce2bb3c0da8bc31a8e4d6c081860a0535749"
 
       def install
         bin.install "toolkode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.3.7/toolkode-darwin-arm64.zip"
-      sha256 "4030263d908b3ef777054229f3cd99eb88991edec96d309e519deefe9faec70b"
+      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.4.1/toolkode-darwin-arm64.zip"
+      sha256 "434bb42fd17b4f97a0d2c54384223df90b7c2e26921d54dd954279165d140d15"
 
       def install
         bin.install "toolkode"
@@ -30,15 +30,15 @@ class Toolkode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.3.7/toolkode-linux-x64.tar.gz"
-      sha256 "3c62aed02b9bb20db2d32369352aa32c22358495d686ca23ebd52668c4f8dd71"
+      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.4.1/toolkode-linux-x64.tar.gz"
+      sha256 "3dd952eef2685fab330f50a80cdb80c1b38540c7a747613448c5788551fdea3d"
       def install
         bin.install "toolkode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.3.7/toolkode-linux-arm64.tar.gz"
-      sha256 "54cc8e6266404088d64dcc26868dcf5f051e45ba5d9a891cad66eeb636528f4f"
+      url "https://github.com/aaronmrosenthal/toolkode-releases/releases/download/v1.4.1/toolkode-linux-arm64.tar.gz"
+      sha256 "8c49095b816d06947cf98a00bc17fe4212dfb723b11a1144fb5ba03cce4084e0"
       def install
         bin.install "toolkode"
       end
